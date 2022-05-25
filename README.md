@@ -1,3 +1,3 @@
-# `dycw-template`
+# `tutorial-free-code-camp-kivy`
 
-DYCW template package
+[Kivy Course - Create Python Games and Mobile Apps](https://www.youtube.com/watch?v=l8Imtec4ReQ)

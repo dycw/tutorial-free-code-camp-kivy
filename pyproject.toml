@@ -2,7 +2,7 @@
 [tool.black]
 line-length = 80
 skip-magic-trailing-comma = true
-target-version = ["py39"]
+target-version = ["py310"]
 
 #### coverage #################################################################
 [tool.coverage]
@@ -38,13 +38,13 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "dycw-template"
-version = "0.1.14"
-description = "DYCW template package"
+name = "kivy"
+version = "0.0.2"
+description = "Learning the Kivy library"
 authors = ["Derek Wan <d.wan@icloud.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
@@ -64,7 +64,6 @@ flake8-print = "^5.0.0"
 flake8-simplify = "^0.19.2"
 flake8-unused-arguments = "^0.0.10"
 isort = "^5.10.1"
-nox = "^2022.1.7"
 poetry-deps-scanner = "^1.0.1"
 pre-commit = "^2.18.1"
 pyclean = "^2.2.0"
@@ -77,7 +76,7 @@ typeguard = "^2.13.3"
 #### pyright ##################################################################
 [tool.pyright]
 include = ["src"]
-pythonVersion = "3.9"
+pythonVersion = "3.10"
 executionEnvironments = [{ root = "src" }]
 typeCheckingMode = "strict"
 reportMissingTypeStubs = false
@@ -99,11 +98,8 @@ reportUnusedCallResult = "error"
 addopts = [
   "-rsxX",
   "--color=auto",
-  "--cov=dycw_template",
-  "--cov-config=pyproject.toml",
-  "--cov-report=html",
   "--strict-markers",
-  "--typeguard-packages=dycw_template",
+  "--typeguard-packages=project",
 ]
 filterwarnings = [
   "error",
