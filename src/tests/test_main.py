@@ -1,4 +1,4 @@
-from dycw_template import negate
+from project import negate
 
 
 def test_negate() -> None:

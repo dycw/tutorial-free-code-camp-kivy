@@ -1,4 +1,4 @@
-__version__ = "0.1.14"
+__version__ = "0.0.2"
 
 
 def negate(x: bool) -> bool:
