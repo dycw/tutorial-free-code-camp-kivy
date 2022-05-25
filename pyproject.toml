@@ -39,7 +39,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "kivy"
-version = "0.0.2"
+version = "0.0.3"
 description = "Learning the Kivy library"
 authors = ["Derek Wan <d.wan@icloud.com>"]
 
