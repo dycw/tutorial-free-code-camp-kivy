@@ -39,13 +39,15 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "project"
-version = "0.0.4"
+version = "0.0.5"
 description = "Learning the Kivy library"
 authors = ["Derek Wan <d.wan@icloud.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-kivy = "^2.1.0"
+kaki = "^0.1.5"
+kivy = { version = "^2.1.0", extras = ["base", "media"] }
+kivymd = "^0.104.2"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
@@ -73,6 +75,7 @@ pytest-cov = "^3.0.0"
 pytest-instafail = "^0.4.2"
 pytest-xdist = "^2.5.0"
 typeguard = "^2.13.3"
+ipython = "^8.3.0"
 
 #### pyright ##################################################################
 [tool.pyright]
