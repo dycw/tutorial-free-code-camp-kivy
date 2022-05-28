@@ -5,9 +5,7 @@ from kivy.app import App
 from kivy.graphics.vertex_instructions import Rectangle
 from kivy.properties import NumericProperty
 from kivy.properties import ReferenceListProperty
-from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
-from kivy.uix.textinput import TextInput
 from kivy.uix.widget import Widget
 from kivy.vector import Vector
 
