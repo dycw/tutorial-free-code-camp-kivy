@@ -1,11 +1,15 @@
 from typing import Any  # noqa: INP001
 
-from kaki.app import App
+import kaki.app
+import kivy.app
 from kivy.factory import Factory
+from kivy.uix.widget import Widget
 from kivymd.app import MDApp
 
+from project.the_lab import Main
 
-class MDLive(App, MDApp):
+
+class MDLive(kaki.app.App, MDApp):
     CLASSES = {"Main": "project.the_lab"}
     AUTORELOADER_PATHS = [(".", {"recursive": True})]
 
@@ -15,5 +19,11 @@ class MDLive(App, MDApp):
         return Factory.Main()
 
 
+class Entry(kivy.app.App):
+    def build(self) -> Widget:
+        return Main()
+
+
 if __name__ == "__main__":
-    MDLive().run()
+    Entry().run()
+    # MDLive().run()
