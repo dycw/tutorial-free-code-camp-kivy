@@ -1,7 +1,6 @@
-from random import randint
-
 from kivy.app import App
 from kivy.clock import Clock
+from kivy.input.providers.mouse import MouseMotionEvent
 from kivy.properties import NumericProperty
 from kivy.properties import ObjectProperty
 from kivy.properties import ReferenceListProperty
@@ -39,7 +38,7 @@ class PongGame(Widget):
         self.ball.center = self.center
         self.ball.velocity = vel
 
-    def update(self, dt) -> None:
+    def update(self, _: float) -> None:
         self.ball.move()
 
         # bounce of paddles
@@ -58,7 +57,7 @@ class PongGame(Widget):
             self.player1.score += 1
             self.serve_ball(vel=(-4, 0))
 
-    def on_touch_move(self, touch) -> None:
+    def on_touch_move(self, touch: MouseMotionEvent) -> None:
         if touch.x < self.width / 3:
             self.player1.center_y = touch.y
         if touch.x > self.width - self.width / 3:
