@@ -3,6 +3,7 @@ from typing import Literal
 from typing import Optional
 
 from beartype import beartype
+from kivy import require
 from kivy.app import App
 from kivy.input.providers.mouse import MouseMotionEvent
 from kivy.properties import ListProperty
